@@ -193,7 +193,7 @@ $(document).ready(function() {
 });
 
 loadQuestions = ()=>{
-    $('.choice').css('background-color', 'white');
+    // $('.choice').css('background-color', 'white');
     if (counter >= max-1){
         counter = 0;
     }else{

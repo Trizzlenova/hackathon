@@ -192,6 +192,8 @@ h5 {
   width: 50%;
   border: 1px solid #e9613c;
   padding: 2em;
+  background-color: #236fbf;
+  color: white;
 }
 #btn-div{
 
@@ -214,6 +216,10 @@ h5 {
   background-color: rgba(0,0,0,0.6);
 }
 
+#quiz {
+  color: #236fbf;
+  background-color: #66c58c;
+}
 
 .modalContent {
   margin-top:50%;
