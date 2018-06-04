@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
@@ -13,23 +14,51 @@
 <title>Vote Q - SF</title>
 </head>
 <body>
-    <header>VoteQ</header>
   <nav>
     <ul>
-      <li><a href="#quiz"></a></li>
-      <li><a href="#ballot"></a></li>
-      <li><a href="#account"></a></li>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#quiz">QUIZ</a></li>
+      <li><a href="#ballot">BALLOT</a></li>
+      <li><a href="#account">ACCOUNT</a></li>
     </ul>
+      <i id='displayMenu' class="fas fa-bars"></i>
   </nav>
-  <section>
-  <div class="container">
-    <div class="row">
-      <div id="map"></div>
-        <!-- Are they registered to vote -->
-<!--         <iframe src="http://sfelections.org/tools/reglookup/" allowtransparency="true" frameborder="0" scrolling="yes" width="90%" height="540px"></iframe> -->
+  <header>VoteQ</header>
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <h1>Welcome, Peter!</h1>
+        <h4>You have <bold>1</bold> day until voting time</h4>
+        <button id='toBallot' type='submit'>Click to Vote Now!</button>
+        <h4>Booths Near You</h4>
+        <i class="fas fa-arrow-down"></i>
+        <div id="map"></div>
+          <!-- Are they registered to vote -->
+      </div>
+      <button id='quizStart' type='submit'>Start Quiz!</button>
     </div>
-  </div>
-</section>
+  </section>
+  <section id="ballot">
+    <iframe id="registerPage" src="http://sfelections.org/tools/reglookup/" allowtransparency="true" frameborder="0" scrolling="yes" width="90%" height="460px">
+    </iframe>
+    <button id='back' type='submit'></button>
+  </section>
+  <section id='account'>
+    <img id='mug' src="images/mug.png">
+    <h5>Name:</h5>
+    <h1>Peter LaCroix</h1>
+    <h5>Username:</h5>
+    <h1>CoffeeBoyLaCroix</h1>
+    <h5>Precinct:</h5>
+    <h1>7347</h1>
+  </section>
+  <section id="pickCategory">
+    <button id='pickHome'>HOME</button>
+    <button id='pickQuiz'>QUIZ</button>
+    <button id= 'pickBallot'>BALLOT</button>
+    <button id= 'pickAccount'>ACCOUNT</button>
+  </section>
+
 
 </body>
 </html>

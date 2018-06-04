@@ -1,6 +1,22 @@
+
+* {
+  box-sizing: border-box;
+  /*border: 1px solid purple;*/
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
 body {
+  font-family: ;
   box-sizing: border-box;
   height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'futura';
 }
 
 .container {
@@ -9,19 +25,138 @@ body {
 
 header{
   color: red;
-  background-color: blue;
+  background-color: #66c58c;
   height: 10vh;
   text-align: center;
   font-size: 2.5em;
+  color: #f19f40;
+  background-color: #e9613c;
+}
+
+nav{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.fa-bars {
+  color: #f19f40;
+  z-index: 1;
+  color: purple;
+  padding-top: .25em;
+  padding-left: .5em;
+  font-size: 2.5em;
+  position: relative;
+}
+
+ul {
+ list-style-type: none;
+ display: none;
+}
+
+#home {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  background-color: #236fbf;
+  color: #66c58c;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+button {
+  margin: .5em;
+}
+
+li {
+  font-size: 4em;
+  text-align: center;
+}
+
+.fa-arrow-down {
+  font-size: .1em;
+  text-align: center;
 }
 
 #map {
-  height: 400px;
+  height: 200px;
   margin-top: 20px;
+  width: 90%;
+  margin: -1em auto 1.6em;
 }
 
-a{
-  color: red;
+iframe {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  position: absolute;
+}
+
+#ballot {
+  display: none;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  width: 50%;
+  margin: .8em;
+}
+
+#quizStart {
+  padding: .5em;
+}
+
+#pickCategory {
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#pickHome, #pickBallot {
+  border-radius: 0;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #66c58c;
+  color: #236fbf;
+  padding: .7em;
+}
+
+#pickQuiz, #pickAccount {
+  border-radius: 0;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f19f40;
+  color: #236fbf;
+  padding: .7em;
+}
+
+#account {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  background-color: #236fbf;
+  color: #f19f40;
+  height: 100vh;
 
 }
 
+#mug {
+  border-radius: 40px;
+  width: 60%;
+  border: solid #236fbf 1px;
+  margin: 3em auto 0;
+}
+
+h5 {
+  margin-top: 1.6em;
+  margin-bottom: 0;
+}
