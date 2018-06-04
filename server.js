@@ -14,3 +14,6 @@ app.get('/', function homepage(req, res) {
 });
 
 
+app.listen(process.env.PORT || 3000, function(){
+  console.log("I'm listening on 3000")
+})
