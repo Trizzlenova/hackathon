@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+
+  </script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
   <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="scripts/app.js" charset="utf-8" defer></script>
@@ -38,6 +44,36 @@
       <button id='quizStart' type='submit'>Start Quiz!</button>
     </div>
   </section>
+    <!-- container div that holds the question and answers -->
+      <div id="quiz" class="container">
+          <!-- questions div -->
+            <div id="questions-div">
+              <h2 id="question"> whats you're favorite fruit</h2>
+            </div>
+          <!-- answers div -->
+          <div id="answers-div">
+            <div id="choice-one" class="choice">apple</div>
+            <div id="choice-two" class="choice">orange</div>
+            <div id="choice-three"class="choice">kiwi</div>
+            <div id="choice-four"class="choice">mango</div>
+          </div>
+
+        <!-- answers div -->
+
+        </div>
+
+        <div id="myModal" class="modal">
+          <div class="modalContent">
+            <h1>Correct</h1>
+            <p id="correctInfo"></p>
+            <div id="btn-div">
+                <button id="next-ques-btn" class="btn btn-lrg btn-primary"> next</button>
+                <button id="voteNow" class="btn btn-lrg btn-primary"> go vote</button>
+              </div>
+            </div>
+          </div>
+
+        <!-- quiz container div end -->
   <section id="ballot">
     <iframe id="registerPage" src="http://sfelections.org/tools/reglookup/" allowtransparency="true" frameborder="0" scrolling="yes" width="90%" height="460px">
     </iframe>
