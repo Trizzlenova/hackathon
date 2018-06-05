@@ -263,3 +263,23 @@ h5 {
   background-color: #e9613c;
   position: inline-block;
 }
+@media only screen and (min-width: 600px) {
+  #mobile-mode{
+    display: none;
+  }
+  #non-mobile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('https://files.slack.com/files-pri/T0351JZQ0-FB1KW5XJR/voteq-logo.jpg') no-repeat;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #non-mobile{
+    display: none;
+  }
+
+}
