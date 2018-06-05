@@ -15,7 +15,6 @@ let account = document.getElementById('account');
 let voteNow = document.getElementById('voteNow');
 let quiz = document.getElementById('quiz');
 
-
 navigator.geolocation.getCurrentPosition(function(response){
   console.log(parseFloat(response.coords.latitude) + " " + parseFloat(response.coords.longitude))
   let lat = parseFloat(response.coords.latitude);
